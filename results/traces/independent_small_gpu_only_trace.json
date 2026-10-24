@@ -1,0 +1,292 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 2"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 3"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 3
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "bytes": 50000,
+        "task_id": 6
+      },
+      "cat": "transfer",
+      "dur": 17,
+      "name": "DMA_H2D: TinyCompute_6",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 6,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 4,
+      "name": "GPU_Kernel: TinyCompute_6",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 17
+    },
+    {
+      "args": {
+        "bytes": 45000,
+        "task_id": 5
+      },
+      "cat": "transfer",
+      "dur": 16,
+      "name": "DMA_H2D: TinyCompute_5",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 17
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 5,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 3,
+      "name": "GPU_Kernel: TinyCompute_5",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 33
+    },
+    {
+      "args": {
+        "bytes": 55000,
+        "task_id": 4
+      },
+      "cat": "transfer",
+      "dur": 17,
+      "name": "DMA_H2D: TinyCompute_4",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 33
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 4,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 4,
+      "name": "GPU_Kernel: TinyCompute_4",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 50
+    },
+    {
+      "args": {
+        "bytes": 40000,
+        "task_id": 3
+      },
+      "cat": "transfer",
+      "dur": 15,
+      "name": "DMA_H2D: TinyCompute_3",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 50
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 3,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 3,
+      "name": "GPU_Kernel: TinyCompute_3",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 65
+    },
+    {
+      "args": {
+        "bytes": 60000,
+        "task_id": 2
+      },
+      "cat": "transfer",
+      "dur": 18,
+      "name": "DMA_H2D: TinyCompute_2",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 65
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 2,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 5,
+      "name": "GPU_Kernel: TinyCompute_2",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 83
+    },
+    {
+      "args": {
+        "bytes": 50000,
+        "task_id": 1
+      },
+      "cat": "transfer",
+      "dur": 17,
+      "name": "DMA_H2D: TinyCompute_1",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 83
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 1,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 4,
+      "name": "GPU_Kernel: TinyCompute_1",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 100
+    }
+  ]
+}

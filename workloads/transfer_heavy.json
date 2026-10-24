@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Transfer_Heavy_Workload",
+  "description": "Workload with high PCIe transfer overhead stressing DMA copy engines and bandwidth",
+  "config": {
+    "cpu_slots": 4,
+    "gpu_slots": 2,
+    "dma_engines": 1,
+    "gpu_vram_bytes": 8589934592,
+    "pcie_bandwidth_bytes_per_tick": 8000,
+    "pcie_setup_latency_ticks": 10
+  },
+  "tasks": [
+    { "id": 1, "name": "Ingest_LargeBuffer1", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 80, "gpu_compute_duration": 15, "input_bytes": 1600000, "working_bytes": 20000, "output_bytes": 0, "dependencies": [] },
+    { "id": 2, "name": "Ingest_LargeBuffer2", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 90, "gpu_compute_duration": 18, "input_bytes": 1800000, "working_bytes": 20000, "output_bytes": 0, "dependencies": [] },
+    { "id": 3, "name": "Ingest_LargeBuffer3", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 85, "gpu_compute_duration": 16, "input_bytes": 1500000, "working_bytes": 20000, "output_bytes": 0, "dependencies": [] },
+    { "id": 4, "name": "Ingest_LargeBuffer4", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 95, "gpu_compute_duration": 20, "input_bytes": 2000000, "working_bytes": 20000, "output_bytes": 0, "dependencies": [] }
+  ]
+}

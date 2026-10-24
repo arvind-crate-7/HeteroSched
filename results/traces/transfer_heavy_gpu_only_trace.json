@@ -1,0 +1,236 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 2"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 3"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 3
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "bytes": 2000000,
+        "task_id": 4
+      },
+      "cat": "transfer",
+      "dur": 260,
+      "name": "DMA_H2D: Ingest_LargeBuffer4",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 4,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 20,
+      "name": "GPU_Kernel: Ingest_LargeBuffer4",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 260
+    },
+    {
+      "args": {
+        "bytes": 1500000,
+        "task_id": 3
+      },
+      "cat": "transfer",
+      "dur": 198,
+      "name": "DMA_H2D: Ingest_LargeBuffer3",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 260
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 3,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 16,
+      "name": "GPU_Kernel: Ingest_LargeBuffer3",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 458
+    },
+    {
+      "args": {
+        "bytes": 1800000,
+        "task_id": 2
+      },
+      "cat": "transfer",
+      "dur": 235,
+      "name": "DMA_H2D: Ingest_LargeBuffer2",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 458
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 2,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 18,
+      "name": "GPU_Kernel: Ingest_LargeBuffer2",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 693
+    },
+    {
+      "args": {
+        "bytes": 1600000,
+        "task_id": 1
+      },
+      "cat": "transfer",
+      "dur": 210,
+      "name": "DMA_H2D: Ingest_LargeBuffer1",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 693
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 1,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 15,
+      "name": "GPU_Kernel: Ingest_LargeBuffer1",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 903
+    }
+  ]
+}

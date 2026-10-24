@@ -1,0 +1,214 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 2"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 3"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 3
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 6,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 13,
+      "name": "CPU_Task: TinyCompute_6",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 5,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 11,
+      "name": "CPU_Task: TinyCompute_5",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 4,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 14,
+      "name": "CPU_Task: TinyCompute_4",
+      "ph": "X",
+      "pid": 1,
+      "tid": 2,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 3,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 10,
+      "name": "CPU_Task: TinyCompute_3",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 2,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 15,
+      "name": "CPU_Task: TinyCompute_2",
+      "ph": "X",
+      "pid": 1,
+      "tid": 3,
+      "ts": 10
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 1,
+        "working_bytes": 1000
+      },
+      "cat": "compute",
+      "dur": 12,
+      "name": "CPU_Task: TinyCompute_1",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 11
+    }
+  ]
+}

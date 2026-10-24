@@ -1,0 +1,148 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 0,
+        "task_id": 4,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 20,
+      "name": "GPU_Kernel: Tracking_Filter",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 65
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 20000,
+        "task_id": 3,
+        "working_bytes": 30000
+      },
+      "cat": "compute",
+      "dur": 30,
+      "name": "GPU_Kernel: ObjectDetection_Yolo",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 35
+    },
+    {
+      "args": {
+        "bytes": 80000,
+        "task_id": 1
+      },
+      "cat": "transfer",
+      "dur": 10,
+      "name": "DMA_H2D: VideoFrame_Ingest",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 40000,
+        "task_id": 1,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 25,
+      "name": "GPU_Kernel: VideoFrame_Ingest",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 10
+    }
+  ]
+}

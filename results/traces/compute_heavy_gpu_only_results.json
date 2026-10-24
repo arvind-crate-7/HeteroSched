@@ -1,0 +1,333 @@
+{
+  "config": {
+    "cpu_slots": 4,
+    "dma_engines": 1,
+    "gpu_slots": 2,
+    "gpu_vram_bytes": 8589934592,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "metrics": {
+    "canonical_events": [
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 9,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 3 DAG dependencies",
+        "phase": 5,
+        "task_id": 8,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 7,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 6,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 5,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 4,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 3,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 2,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived with zero dependencies; moved directly to READY",
+        "phase": 5,
+        "task_id": 1,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Permanent simulation deadlock detected. No progress possible.",
+        "phase": 6,
+        "task_id": 0,
+        "tick": 0,
+        "track_id": 0,
+        "type": "SIMULATION_DEADLOCK"
+      }
+    ],
+    "completed_tasks": 0,
+    "cpu_utilization_pct": 0.0,
+    "deadline_miss_count": 0,
+    "deadline_miss_ratio": 0.0,
+    "dma_utilization_pct": 0.0,
+    "gpu_utilization_pct": 0.0,
+    "infeasible_tasks": 1,
+    "latency_mean_ticks": 0.0,
+    "latency_p50_ticks": 0,
+    "latency_p95_ticks": 0,
+    "latency_p99_ticks": 0,
+    "latency_sample_std_ticks": 0.0,
+    "makespan_ticks": 0,
+    "peak_vram_bytes": 0,
+    "scheduler_wall_clock_us": 31,
+    "throughput_tps": 0.0,
+    "total_tasks": 9
+  },
+  "policy": "gpu_only",
+  "schema_version": "1.0.0",
+  "tasks": [
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        8
+      ],
+      "finish_tick": 0,
+      "id": 9,
+      "input_bytes": 60000,
+      "name": "Stage4_Postprocess",
+      "output_bytes": 0,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 10000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        5,
+        6,
+        7
+      ],
+      "finish_tick": 0,
+      "id": 8,
+      "input_bytes": 140000,
+      "name": "Stage3_DenseGemm",
+      "output_bytes": 60000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 80000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        4
+      ],
+      "finish_tick": 0,
+      "id": 7,
+      "input_bytes": 80000,
+      "name": "Stage2_Pool_C",
+      "output_bytes": 40000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 15000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        3
+      ],
+      "finish_tick": 0,
+      "id": 6,
+      "input_bytes": 100000,
+      "name": "Stage2_Activation_B",
+      "output_bytes": 50000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 20000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        2
+      ],
+      "finish_tick": 0,
+      "id": 5,
+      "input_bytes": 100000,
+      "name": "Stage2_Activation_A",
+      "output_bytes": 50000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 20000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 0,
+      "id": 4,
+      "input_bytes": 200000,
+      "name": "Stage1_FeatureExtract",
+      "output_bytes": 80000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 40000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 0,
+      "id": 3,
+      "input_bytes": 200000,
+      "name": "Stage1_MatrixMul_B",
+      "output_bytes": 100000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 50000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 0,
+      "id": 2,
+      "input_bytes": 200000,
+      "name": "Stage1_MatrixMul_A",
+      "output_bytes": 100000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "WAITING_DEPS",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 50000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "NONE",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "Ineligible or memory demand exceeds physical GPU VRAM capacity",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [],
+      "finish_tick": 0,
+      "id": 1,
+      "input_bytes": 0,
+      "name": "Stage0_Preprocessing",
+      "output_bytes": 200000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "INFEASIBLE",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 10000
+    }
+  ],
+  "workload_file": "D:\\Hectrogeneous workload Sheduler\\heterosched\\workloads\\compute_heavy.json"
+}

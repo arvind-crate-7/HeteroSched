@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Memory_Constrained_Workload",
+  "description": "High memory pressure testing admission control, waiting queues, and reference counting",
+  "config": {
+    "cpu_slots": 2,
+    "gpu_slots": 2,
+    "dma_engines": 1,
+    "gpu_vram_bytes": 104857600,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "tasks": [
+    { "id": 1, "name": "BigModel_Shard1", "arrival_tick": 0, "eligibility": "GPU_ONLY", "cpu_compute_duration": 200, "gpu_compute_duration": 40, "input_bytes": 10000000, "working_bytes": 40000000, "output_bytes": 10000000, "dependencies": [] },
+    { "id": 2, "name": "BigModel_Shard2", "arrival_tick": 0, "eligibility": "GPU_ONLY", "cpu_compute_duration": 220, "gpu_compute_duration": 45, "input_bytes": 10000000, "working_bytes": 40000000, "output_bytes": 10000000, "dependencies": [] },
+    { "id": 3, "name": "BigModel_Shard3", "arrival_tick": 0, "eligibility": "GPU_ONLY", "cpu_compute_duration": 210, "gpu_compute_duration": 42, "input_bytes": 10000000, "working_bytes": 40000000, "output_bytes": 10000000, "dependencies": [] },
+    { "id": 4, "name": "Consumer_Aggregate", "arrival_tick": 0, "eligibility": "GPU_ONLY", "cpu_compute_duration": 150, "gpu_compute_duration": 30, "input_bytes": 30000000, "working_bytes": 20000000, "output_bytes": 5000000, "dependencies": [1, 2, 3] }
+  ]
+}

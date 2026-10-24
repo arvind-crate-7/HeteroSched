@@ -1,0 +1,298 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 2"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 3"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 3
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 9,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 100,
+      "name": "CPU_Task: Stage4_Postprocess",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 309
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 60000,
+        "task_id": 8,
+        "working_bytes": 80000
+      },
+      "cat": "compute",
+      "dur": 40,
+      "name": "GPU_Kernel: Stage3_DenseGemm",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 269
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 40000,
+        "task_id": 7,
+        "working_bytes": 15000
+      },
+      "cat": "compute",
+      "dur": 18,
+      "name": "GPU_Kernel: Stage2_Pool_C",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 196
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 50000,
+        "task_id": 6,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 22,
+      "name": "GPU_Kernel: Stage2_Activation_B",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 216
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 50000,
+        "task_id": 5,
+        "working_bytes": 20000
+      },
+      "cat": "compute",
+      "dur": 20,
+      "name": "GPU_Kernel: Stage2_Activation_A",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 249
+    },
+    {
+      "args": {
+        "bytes": 200000,
+        "task_id": 4
+      },
+      "cat": "transfer",
+      "dur": 18,
+      "name": "DMA_H2D: Stage1_FeatureExtract",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 150
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 80000,
+        "task_id": 4,
+        "working_bytes": 40000
+      },
+      "cat": "compute",
+      "dur": 28,
+      "name": "GPU_Kernel: Stage1_FeatureExtract",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 168
+    },
+    {
+      "args": {
+        "bytes": 200000,
+        "task_id": 3
+      },
+      "cat": "transfer",
+      "dur": 18,
+      "name": "DMA_H2D: Stage1_MatrixMul_B",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 168
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 100000,
+        "task_id": 3,
+        "working_bytes": 50000
+      },
+      "cat": "compute",
+      "dur": 30,
+      "name": "GPU_Kernel: Stage1_MatrixMul_B",
+      "ph": "X",
+      "pid": 2,
+      "tid": 1,
+      "ts": 186
+    },
+    {
+      "args": {
+        "bytes": 200000,
+        "task_id": 2
+      },
+      "cat": "transfer",
+      "dur": 18,
+      "name": "DMA_H2D: Stage1_MatrixMul_A",
+      "ph": "X",
+      "pid": 3,
+      "tid": 0,
+      "ts": 186
+    },
+    {
+      "args": {
+        "device": "GPU",
+        "output_bytes": 100000,
+        "task_id": 2,
+        "working_bytes": 50000
+      },
+      "cat": "compute",
+      "dur": 35,
+      "name": "GPU_Kernel: Stage1_MatrixMul_A",
+      "ph": "X",
+      "pid": 2,
+      "tid": 0,
+      "ts": 214
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 200000,
+        "task_id": 1,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 150,
+      "name": "CPU_Task: Stage0_Preprocessing",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 0
+    }
+  ]
+}

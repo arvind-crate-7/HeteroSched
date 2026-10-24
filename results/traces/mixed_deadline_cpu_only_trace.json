@@ -1,0 +1,150 @@
+{
+  "displayTimeUnit": "ms",
+  "traceEvents": [
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "CPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 1
+    },
+    {
+      "args": {
+        "name": "Worker 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 0
+    },
+    {
+      "args": {
+        "name": "GPU"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 2
+    },
+    {
+      "args": {
+        "name": "Stream 1"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 2,
+      "tid": 1
+    },
+    {
+      "args": {
+        "name": "PCIe Interconnect"
+      },
+      "name": "process_name",
+      "ph": "M",
+      "pid": 3
+    },
+    {
+      "args": {
+        "name": "DMA Engine 0"
+      },
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 3,
+      "tid": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 4,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 120,
+      "name": "CPU_Task: Tracking_Filter",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 550
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 20000,
+        "task_id": 3,
+        "working_bytes": 30000
+      },
+      "cat": "compute",
+      "dur": 450,
+      "name": "CPU_Task: ObjectDetection_Yolo",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 100
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 0,
+        "task_id": 2,
+        "working_bytes": 5000
+      },
+      "cat": "compute",
+      "dur": 40,
+      "name": "CPU_Task: Telemetry_Logging",
+      "ph": "X",
+      "pid": 1,
+      "tid": 0,
+      "ts": 0
+    },
+    {
+      "args": {
+        "device": "CPU",
+        "output_bytes": 40000,
+        "task_id": 1,
+        "working_bytes": 10000
+      },
+      "cat": "compute",
+      "dur": 100,
+      "name": "CPU_Task: VideoFrame_Ingest",
+      "ph": "X",
+      "pid": 1,
+      "tid": 1,
+      "ts": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Compute_Heavy_Workload",
+  "description": "Tasks with high computational intensity where GPU acceleration amortizes transfer costs",
+  "config": {
+    "cpu_slots": 4,
+    "gpu_slots": 2,
+    "dma_engines": 1,
+    "gpu_vram_bytes": 8589934592,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "tasks": [
+    { "id": 1, "name": "Stage0_Preprocessing", "arrival_tick": 0, "eligibility": "CPU_ONLY", "cpu_compute_duration": 150, "gpu_compute_duration": 150, "input_bytes": 0, "working_bytes": 10000, "output_bytes": 200000, "dependencies": [] },
+    { "id": 2, "name": "Stage1_MatrixMul_A", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 600, "gpu_compute_duration": 35, "input_bytes": 200000, "working_bytes": 50000, "output_bytes": 100000, "dependencies": [1] },
+    { "id": 3, "name": "Stage1_MatrixMul_B", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 550, "gpu_compute_duration": 30, "input_bytes": 200000, "working_bytes": 50000, "output_bytes": 100000, "dependencies": [1] },
+    { "id": 4, "name": "Stage1_FeatureExtract", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 480, "gpu_compute_duration": 28, "input_bytes": 200000, "working_bytes": 40000, "output_bytes": 80000, "dependencies": [1] },
+    { "id": 5, "name": "Stage2_Activation_A", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 300, "gpu_compute_duration": 20, "input_bytes": 100000, "working_bytes": 20000, "output_bytes": 50000, "dependencies": [2] },
+    { "id": 6, "name": "Stage2_Activation_B", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 320, "gpu_compute_duration": 22, "input_bytes": 100000, "working_bytes": 20000, "output_bytes": 50000, "dependencies": [3] },
+    { "id": 7, "name": "Stage2_Pool_C", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 250, "gpu_compute_duration": 18, "input_bytes": 80000, "working_bytes": 15000, "output_bytes": 40000, "dependencies": [4] },
+    { "id": 8, "name": "Stage3_DenseGemm", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 700, "gpu_compute_duration": 40, "input_bytes": 140000, "working_bytes": 80000, "output_bytes": 60000, "dependencies": [5, 6, 7] },
+    { "id": 9, "name": "Stage4_Postprocess", "arrival_tick": 0, "eligibility": "CPU_ONLY", "cpu_compute_duration": 100, "gpu_compute_duration": 100, "input_bytes": 60000, "working_bytes": 10000, "output_bytes": 0, "dependencies": [8] }
+  ]
+}

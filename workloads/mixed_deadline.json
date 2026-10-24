@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Mixed_Deadline_Workload",
+  "description": "Tasks with hard real-time deadlines testing urgency ranking and dynamic GPU offload salvage",
+  "config": {
+    "cpu_slots": 2,
+    "gpu_slots": 2,
+    "dma_engines": 1,
+    "gpu_vram_bytes": 4294967296,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "tasks": [
+    { "id": 1, "name": "VideoFrame_Ingest", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 100, "gpu_compute_duration": 25, "input_bytes": 80000, "working_bytes": 10000, "output_bytes": 40000, "deadline": 60, "priority": 10, "dependencies": [] },
+    { "id": 2, "name": "Telemetry_Logging", "arrival_tick": 0, "eligibility": "CPU_ONLY", "cpu_compute_duration": 40, "gpu_compute_duration": 40, "input_bytes": 5000, "working_bytes": 5000, "output_bytes": 0, "deadline": 300, "priority": 2, "dependencies": [] },
+    { "id": 3, "name": "ObjectDetection_Yolo", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 450, "gpu_compute_duration": 30, "input_bytes": 120000, "working_bytes": 30000, "output_bytes": 20000, "deadline": 120, "priority": 9, "dependencies": [1] },
+    { "id": 4, "name": "Tracking_Filter", "arrival_tick": 0, "eligibility": "CPU_OR_GPU", "cpu_compute_duration": 120, "gpu_compute_duration": 20, "input_bytes": 20000, "working_bytes": 10000, "output_bytes": 0, "deadline": 180, "priority": 8, "dependencies": [3] }
+  ]
+}

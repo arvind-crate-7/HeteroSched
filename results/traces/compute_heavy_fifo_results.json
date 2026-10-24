@@ -1,0 +1,639 @@
+{
+  "config": {
+    "cpu_slots": 4,
+    "dma_engines": 1,
+    "gpu_slots": 2,
+    "gpu_vram_bytes": 8589934592,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "metrics": {
+    "canonical_events": [
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 9,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 3 DAG dependencies",
+        "phase": 5,
+        "task_id": 8,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 7,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 6,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 5,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 4,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 3,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 1 DAG dependencies",
+        "phase": 5,
+        "task_id": 2,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived with zero dependencies; moved directly to READY",
+        "phase": 5,
+        "task_id": 1,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 1,
+        "tick": 0,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 1,
+        "tick": 150,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 1,
+        "tick": 150,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 4,
+        "tick": 150,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 3,
+        "tick": 150,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 2,
+        "tick": 150,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 2,
+        "tick": 150,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 1",
+        "phase": 6,
+        "task_id": 3,
+        "tick": 150,
+        "track_id": 1,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 2",
+        "phase": 6,
+        "task_id": 4,
+        "tick": 150,
+        "track_id": 2,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 4,
+        "tick": 630,
+        "track_id": 2,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 4,
+        "tick": 630,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 7,
+        "tick": 630,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 2",
+        "phase": 6,
+        "task_id": 7,
+        "tick": 630,
+        "track_id": 2,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 3,
+        "tick": 700,
+        "track_id": 1,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 3,
+        "tick": 700,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 6,
+        "tick": 700,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 1",
+        "phase": 6,
+        "task_id": 6,
+        "tick": 700,
+        "track_id": 1,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 2,
+        "tick": 750,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 2,
+        "tick": 750,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 5,
+        "tick": 750,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 5,
+        "tick": 750,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 7,
+        "tick": 880,
+        "track_id": 2,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 7,
+        "tick": 880,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 6,
+        "tick": 1020,
+        "track_id": 1,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 6,
+        "tick": 1020,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 5,
+        "tick": 1050,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 5,
+        "tick": 1050,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 8,
+        "tick": 1050,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 8,
+        "tick": 1050,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 8,
+        "tick": 1750,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 8,
+        "tick": 1750,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 9,
+        "tick": 1750,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 9,
+        "tick": 1750,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 9,
+        "tick": 1850,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 9,
+        "tick": 1850,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      }
+    ],
+    "completed_tasks": 9,
+    "cpu_utilization_pct": 46.62162162162162,
+    "deadline_miss_count": 0,
+    "deadline_miss_ratio": 0.0,
+    "dma_utilization_pct": 0.0,
+    "gpu_utilization_pct": 0.0,
+    "infeasible_tasks": 0,
+    "latency_mean_ticks": 975.5555555555555,
+    "latency_p50_ticks": 880,
+    "latency_p95_ticks": 1850,
+    "latency_p99_ticks": 1850,
+    "latency_sample_std_ticks": 537.2176260862797,
+    "makespan_ticks": 1850,
+    "peak_vram_bytes": 0,
+    "scheduler_wall_clock_us": 39,
+    "throughput_tps": 4864.864864864865,
+    "total_tasks": 9
+  },
+  "policy": "fifo",
+  "schema_version": "1.0.0",
+  "tasks": [
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 1750,
+      "deadline": null,
+      "dependencies": [
+        8
+      ],
+      "finish_tick": 1850,
+      "id": 9,
+      "input_bytes": 60000,
+      "name": "Stage4_Postprocess",
+      "output_bytes": 0,
+      "priority": 0,
+      "scheduled_tick": 1750,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 10000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 1050,
+      "deadline": null,
+      "dependencies": [
+        5,
+        6,
+        7
+      ],
+      "finish_tick": 1750,
+      "id": 8,
+      "input_bytes": 140000,
+      "name": "Stage3_DenseGemm",
+      "output_bytes": 60000,
+      "priority": 0,
+      "scheduled_tick": 1050,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 80000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 2,
+      "blocked_reason": "",
+      "compute_start_tick": 630,
+      "deadline": null,
+      "dependencies": [
+        4
+      ],
+      "finish_tick": 880,
+      "id": 7,
+      "input_bytes": 80000,
+      "name": "Stage2_Pool_C",
+      "output_bytes": 40000,
+      "priority": 0,
+      "scheduled_tick": 630,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 15000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 1,
+      "blocked_reason": "",
+      "compute_start_tick": 700,
+      "deadline": null,
+      "dependencies": [
+        3
+      ],
+      "finish_tick": 1020,
+      "id": 6,
+      "input_bytes": 100000,
+      "name": "Stage2_Activation_B",
+      "output_bytes": 50000,
+      "priority": 0,
+      "scheduled_tick": 700,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 20000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 750,
+      "deadline": null,
+      "dependencies": [
+        2
+      ],
+      "finish_tick": 1050,
+      "id": 5,
+      "input_bytes": 100000,
+      "name": "Stage2_Activation_A",
+      "output_bytes": 50000,
+      "priority": 0,
+      "scheduled_tick": 750,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 20000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 2,
+      "blocked_reason": "",
+      "compute_start_tick": 150,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 630,
+      "id": 4,
+      "input_bytes": 200000,
+      "name": "Stage1_FeatureExtract",
+      "output_bytes": 80000,
+      "priority": 0,
+      "scheduled_tick": 150,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 40000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 1,
+      "blocked_reason": "",
+      "compute_start_tick": 150,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 700,
+      "id": 3,
+      "input_bytes": 200000,
+      "name": "Stage1_MatrixMul_B",
+      "output_bytes": 100000,
+      "priority": 0,
+      "scheduled_tick": 150,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 50000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 150,
+      "deadline": null,
+      "dependencies": [
+        1
+      ],
+      "finish_tick": 750,
+      "id": 2,
+      "input_bytes": 200000,
+      "name": "Stage1_MatrixMul_A",
+      "output_bytes": 100000,
+      "priority": 0,
+      "scheduled_tick": 150,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 50000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "CPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 0,
+      "deadline": null,
+      "dependencies": [],
+      "finish_tick": 150,
+      "id": 1,
+      "input_bytes": 0,
+      "name": "Stage0_Preprocessing",
+      "output_bytes": 200000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 10000
+    }
+  ],
+  "workload_file": "D:\\Hectrogeneous workload Sheduler\\heterosched\\workloads\\compute_heavy.json"
+}

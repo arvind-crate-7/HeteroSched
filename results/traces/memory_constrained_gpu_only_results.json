@@ -1,0 +1,358 @@
+{
+  "config": {
+    "cpu_slots": 2,
+    "dma_engines": 1,
+    "gpu_slots": 2,
+    "gpu_vram_bytes": 104857600,
+    "pcie_bandwidth_bytes_per_tick": 16000,
+    "pcie_setup_latency_ticks": 5
+  },
+  "metrics": {
+    "canonical_events": [
+      {
+        "device": "CPU",
+        "metadata": "Arrived; waiting for 3 DAG dependencies",
+        "phase": 5,
+        "task_id": 4,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived with zero dependencies; moved directly to READY",
+        "phase": 5,
+        "task_id": 3,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived with zero dependencies; moved directly to READY",
+        "phase": 5,
+        "task_id": 2,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "CPU",
+        "metadata": "Arrived with zero dependencies; moved directly to READY",
+        "phase": 5,
+        "task_id": 1,
+        "tick": 0,
+        "track_id": 0,
+        "type": "WORKLOAD_ARRIVAL"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Enqueued in PCIe DMA Transfer Queue",
+        "phase": 6,
+        "task_id": 3,
+        "tick": 0,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Started PCIe DMA transfer (630 us)",
+        "phase": 6,
+        "task_id": 3,
+        "tick": 0,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "H2D PCIe DMA transfer completed",
+        "phase": 1,
+        "task_id": 3,
+        "tick": 630,
+        "track_id": 0,
+        "type": "TRANSFER_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 3,
+        "tick": 630,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 3,
+        "tick": 672,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 3,
+        "tick": 672,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Enqueued in PCIe DMA Transfer Queue",
+        "phase": 6,
+        "task_id": 2,
+        "tick": 672,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Started PCIe DMA transfer (630 us)",
+        "phase": 6,
+        "task_id": 2,
+        "tick": 672,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "H2D PCIe DMA transfer completed",
+        "phase": 1,
+        "task_id": 2,
+        "tick": 1302,
+        "track_id": 0,
+        "type": "TRANSFER_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 2,
+        "tick": 1302,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 2,
+        "tick": 1347,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 2,
+        "tick": 1347,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Enqueued in PCIe DMA Transfer Queue",
+        "phase": 6,
+        "task_id": 1,
+        "tick": 1347,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Started PCIe DMA transfer (630 us)",
+        "phase": 6,
+        "task_id": 1,
+        "tick": 1347,
+        "track_id": 0,
+        "type": "DISPATCH_TRANSFER"
+      },
+      {
+        "device": "GPU",
+        "metadata": "H2D PCIe DMA transfer completed",
+        "phase": 1,
+        "task_id": 1,
+        "tick": 1977,
+        "track_id": 0,
+        "type": "TRANSFER_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 1,
+        "tick": 1977,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 1,
+        "tick": 2017,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 1,
+        "tick": 2017,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      },
+      {
+        "device": "CPU",
+        "metadata": "All dependencies satisfied; moved to READY queue",
+        "phase": 4,
+        "task_id": 4,
+        "tick": 2017,
+        "track_id": 0,
+        "type": "DEPENDENCY_RESOLVED"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel dispatched on slot 0",
+        "phase": 6,
+        "task_id": 4,
+        "tick": 2017,
+        "track_id": 0,
+        "type": "DISPATCH_COMPUTE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Compute kernel finished",
+        "phase": 2,
+        "task_id": 4,
+        "tick": 2047,
+        "track_id": 0,
+        "type": "COMPUTE_COMPLETE"
+      },
+      {
+        "device": "GPU",
+        "metadata": "Reclaimed working memory and published output buffer",
+        "phase": 3,
+        "task_id": 4,
+        "tick": 2047,
+        "track_id": 0,
+        "type": "MEMORY_RELEASE"
+      }
+    ],
+    "completed_tasks": 4,
+    "cpu_utilization_pct": 0.0,
+    "deadline_miss_count": 0,
+    "deadline_miss_ratio": 0.0,
+    "dma_utilization_pct": 92.33023937469468,
+    "gpu_utilization_pct": 3.8348803126526625,
+    "infeasible_tasks": 0,
+    "latency_mean_ticks": 1520.75,
+    "latency_p50_ticks": 1347,
+    "latency_p95_ticks": 2047,
+    "latency_p99_ticks": 2047,
+    "latency_sample_std_ticks": 651.605389275851,
+    "makespan_ticks": 2047,
+    "peak_vram_bytes": 85000000,
+    "scheduler_wall_clock_us": 57,
+    "throughput_tps": 1954.0791402051784,
+    "total_tasks": 4
+  },
+  "policy": "gpu_only",
+  "schema_version": "1.0.0",
+  "tasks": [
+    {
+      "arrival_tick": 0,
+      "assigned_device": "GPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 2017,
+      "deadline": null,
+      "dependencies": [
+        1,
+        2,
+        3
+      ],
+      "finish_tick": 2047,
+      "id": 4,
+      "input_bytes": 30000000,
+      "name": "Consumer_Aggregate",
+      "output_bytes": 5000000,
+      "priority": 0,
+      "scheduled_tick": 2017,
+      "state": "COMPLETED",
+      "transfer_end_tick": 0,
+      "transfer_start_tick": 0,
+      "working_bytes": 20000000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "GPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "",
+      "compute_start_tick": 630,
+      "deadline": null,
+      "dependencies": [],
+      "finish_tick": 672,
+      "id": 3,
+      "input_bytes": 10000000,
+      "name": "BigModel_Shard3",
+      "output_bytes": 10000000,
+      "priority": 0,
+      "scheduled_tick": 0,
+      "state": "COMPLETED",
+      "transfer_end_tick": 630,
+      "transfer_start_tick": 0,
+      "working_bytes": 40000000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "GPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "Temporarily blocked waiting for GPU VRAM",
+      "compute_start_tick": 1302,
+      "deadline": null,
+      "dependencies": [],
+      "finish_tick": 1347,
+      "id": 2,
+      "input_bytes": 10000000,
+      "name": "BigModel_Shard2",
+      "output_bytes": 10000000,
+      "priority": 0,
+      "scheduled_tick": 672,
+      "state": "COMPLETED",
+      "transfer_end_tick": 1302,
+      "transfer_start_tick": 672,
+      "working_bytes": 40000000
+    },
+    {
+      "arrival_tick": 0,
+      "assigned_device": "GPU",
+      "assigned_dma": 0,
+      "assigned_slot": 0,
+      "blocked_reason": "Temporarily blocked waiting for GPU VRAM",
+      "compute_start_tick": 1977,
+      "deadline": null,
+      "dependencies": [],
+      "finish_tick": 2017,
+      "id": 1,
+      "input_bytes": 10000000,
+      "name": "BigModel_Shard1",
+      "output_bytes": 10000000,
+      "priority": 0,
+      "scheduled_tick": 1347,
+      "state": "COMPLETED",
+      "transfer_end_tick": 1977,
+      "transfer_start_tick": 1347,
+      "working_bytes": 40000000
+    }
+  ],
+  "workload_file": "D:\\Hectrogeneous workload Sheduler\\heterosched\\workloads\\memory_constrained.json"
+}
